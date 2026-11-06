@@ -1,0 +1,53 @@
+{
+  "name": "mindbox-expo-plugin",
+  "version": "1.0.5",
+  "target-version": "1.0.5",
+  "main": "app.plugin.js",
+  "react-native": "build/runtime/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build",
+    "app.plugin.js",
+    "src/ios/support",
+    "src/android/support",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf build && tsc",
+    "clean": "rimraf build",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "repository": "https://github.com/maestra-io/expo-plugin",
+  "author": "Maestra <support@maestra.io>",
+  "bugs": {
+    "url": "https://github.com/maestra-io/expo-plugin/issues"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "description": "Plugin for integration React Native Expo mobile apps with Maestra",
+  "exports": {
+    ".": {
+      "react-native": "./build/runtime/index.js",
+      "default": "./app.plugin.js"
+    },
+    "./runtime": "./build/runtime/index.js",
+    "./app.plugin.js": "./app.plugin.js"
+  },
+  "dependencies": {
+    "@expo/config-plugins": "^54.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "eslint": "^9.36.0",
+    "prettier": "^3.6.2",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}

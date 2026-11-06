@@ -1,0 +1,35 @@
+{
+  "name": "mindboxexpoexample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "prebuildAndroid": "expo prebuild --platform android",
+    "prebuildIOS": "expo prebuild --platform ios",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "wipe": "rm -rf node_modules .expo .expo-shared dist build .turbo .next .cache android ios yarn.lock package-lock.json"
+  },
+  "dependencies": {
+    "@react-navigation/native": "7.1.17",
+    "@react-navigation/native-stack": "7.3.26",
+    "expo": "^55.0.0",
+    "expo-build-properties": "~55.0.14",
+    "expo-constants": "~55.0.16",
+    "expo-dev-client": "~55.0.35",
+    "expo-device": "~55.0.17",
+    "expo-notifications": "~55.0.23",
+    "expo-status-bar": "~55.0.6",
+    "mindbox-expo-plugin": "1.0.5",
+    "mindbox-sdk": "^2.15.1",
+    "react": "19.2.0",
+    "react-native": "0.83.6",
+    "react-native-safe-area-context": "~5.6.2",
+    "react-native-screens": "~4.23.0"
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/react": "~19.2.0",
+    "typescript": "~5.9.2"
+  }
+}
